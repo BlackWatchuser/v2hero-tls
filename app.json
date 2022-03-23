@@ -1,0 +1,11 @@
+{
+  "name": "v2hero-tls",
+  "description": "heroku tls",
+  "keywords": ["V2Ray","V2Fly","Docker"],
+  "env": {
+
+  },
+  "website": "https://github.com/BlackWatchuser/v2hero-tls",
+  "repository": "https://github.com/BlackWatchuser/v2hero-tls",
+  "stack": "container"
+ }
