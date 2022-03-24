@@ -30,8 +30,3 @@ EOF
 systemctl enable v2ray
 systemctl restart v2ray
 systemctl restart nginx
-
-while true
-do
-  sleep 1
-done
