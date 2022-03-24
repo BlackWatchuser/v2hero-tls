@@ -21,4 +21,4 @@ CMD tar -xvf letsencrypt.tar.gz
 CMD yum install nginx
 CMD /letsencrypt/letsencrypt-auto-source/letsencrypt-auto certonly --standalone --email $EMAIL -d $DOMAIN
 
-RUN chmod +x /entrypoint.sh && /entrypoint.sh &>/run.log 2>&1
+RUN chmod +x /root/entrypoint.sh && /root/entrypoint.sh &>./run.log 2>&1
