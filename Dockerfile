@@ -20,5 +20,5 @@ CMD sed -i -e "s/\UUID1/$UUID1/g" -e "s/\UUID2/$UUID2/g" config.json && mv confi
 CMD tar -xvf letsencrypt.tar.gz
 CMD yum install nginx
 CMD /letsencrypt/letsencrypt-auto-source/letsencrypt-auto certonly --standalone --email $EMAIL -d $DOMAIN
-CMD chmod +x /root/entrypoint.sh
+RUN chmod +x /root/entrypoint.sh
 RUN /root/entrypoint.sh
